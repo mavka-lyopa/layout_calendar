@@ -1,14 +1,15 @@
 $calendar-cell-width: 100px;
 $calendar-cell-height: 100px;
 $days-of-the-week: (
-  mon: 0,
-  tue: 1,
-  wed: 2,
-  thu: 3,
-  fri: 4,
-  sat: 5,
-  sun: 6,
+  sun: 0,
+  mon: 1,
+  tue: 2,
+  wed: 3,
+  thu: 4,
+  fri: 5,
+  sat: 6,
 );
+$gap-size: 1px;
 
 body {
   margin: 0;
@@ -27,7 +28,7 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  gap: $gap-size;
   padding: 10px;
   margin: 0;
   width: calc(7 * $calendar-cell-width + 6px + 20px);
